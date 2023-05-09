@@ -29,7 +29,7 @@ echo "Enter your public SSH key:"
 read public_key
 
 # Verify that the provided key is not empty
-if [[ -z "$public_key" ]]; then
+if [ -z "$public_key" ]; then
     echo "No public SSH key provided. Aborting."
     exit 1
 fi
